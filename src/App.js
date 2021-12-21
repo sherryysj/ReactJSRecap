@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  const name = "render me";
+  //const name = "render me";
 
   // return jsx - javascript in xml
   return (
@@ -24,7 +24,8 @@ function App() {
         >
           Learn React
         </a>
-        <p>{"render javascript expression as text"} {name}</p>
+        {/* commany by press shift+alt+a */}
+        {/* <p>{"render javascript expression as text"} {name}</p> */}
       </header>
     </div>
   );
