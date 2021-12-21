@@ -2,7 +2,14 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const name = "render me";
+
+  // return jsx - javascript in xml
   return (
+    
+    // use className instead of class in react
+    // jsx renders javascript expression as text
+    // but cannot render object and boolean to the page
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -17,6 +24,7 @@ function App() {
         >
           Learn React
         </a>
+        <p>{"render javascript expression as text"} {name}</p>
       </header>
     </div>
   );
