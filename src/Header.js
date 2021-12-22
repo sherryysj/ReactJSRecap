@@ -3,15 +3,18 @@
 
 const Header = () => {
 
+    // write style as variable
+    const headerStyle = {
+        backgroundColor: 'royalblue',
+        color: '#fff'
+    };
+
     return (
-        // use style directly, double {} needed, the inside one refers to the style
-        <header style={{
-            backgroundColor: 'mediumblue',
-            color: '#fff'
-        }}>
+        // refer inline style from variable
+        <header style={headerStyle}>
             <h1>Welcome</h1>
         </header>
     )
 }
 
-export default Header
+export default Header;

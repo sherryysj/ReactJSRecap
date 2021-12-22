@@ -17,4 +17,5 @@ const Content = () => {
     )
 }
 
-export default Content
+
+export default Content; // ';' this can be omitted here
