@@ -4,6 +4,14 @@ import './App.css';
 function App() {
   //const name = "render me";
 
+  const handleNameChange = () => {
+
+     const names = ['Sherry','Loves','Ivory'];
+     const int = Math.floor(Math.random() * 3);
+     return names[int];
+
+  }
+
   // return jsx - javascript in xml
   return (
     
@@ -14,7 +22,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Hello, {handleNameChange()}!
         </p>
         <a
           className="App-link"
