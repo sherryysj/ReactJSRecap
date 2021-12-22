@@ -1,7 +1,21 @@
-import logo from './logo.svg';
+/* import logo from './logo.svg'; */
 import './App.css';
+import Header from './Header';
+import Content from './Content';
+import Footer from './Footer';
 
 function App() {
+
+  return (
+    <div className="App">
+      <Header />
+      <Content />
+      <Footer />
+    </div>
+  )
+
+
+  /*
   //const name = "render me";
 
   const handleNameChange = () => {
@@ -12,6 +26,7 @@ function App() {
 
   }
 
+  // command by press shift+alt+a 
   // return jsx - javascript in xml
   return (
     
@@ -32,11 +47,13 @@ function App() {
         >
           Learn React
         </a>
-        {/* commany by press shift+alt+a */}
-        {/* <p>{"render javascript expression as text"} {name}</p> */}
+       
+        <p>{"render javascript expression as text"} {name}</p> 
       </header>
     </div>
   );
+  */
 }
+
 
 export default App;
