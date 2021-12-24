@@ -12,7 +12,7 @@ const Header = () => {
     return (
         // refer inline style from variable
         <header style={headerStyle}>
-            <h1>Welcome</h1>
+            <h1>Game List</h1>
         </header>
     )
 }
