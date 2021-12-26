@@ -1,11 +1,11 @@
 const Footer = ({itemLength}) => {
-    const today = new Date();
 
     return (
         <footer>
-            <p>{itemLength} games</p>
+            <p>{itemLength} {itemLength <= 1 ? "Game" : "Games"} </p>
         </footer>
     )
+
 }
 
 export default Footer;
