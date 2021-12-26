@@ -1,10 +1,10 @@
 import LineItem from "./LineItem";
 
-const ItemList = ({items, setItems}) => {
+const ItemList = ({items, searchItems, setItems}) => {
 
     return (
         <ul>
-            {items.map((item) => (
+            {searchItems.map((item) => (
                 <LineItem 
                     key = {item.id}
                     item = {item}

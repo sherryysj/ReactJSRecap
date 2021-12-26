@@ -20,7 +20,8 @@ const Content = ({items, setItems}) => {
             />
             {items.length ? (
                 <ItemList
-                    items = {items.filter(item=>((item.item).toLowerCase()).includes(search.toLowerCase()))}
+                    items = {items}
+                    searchItems = {items.filter(item=>((item.item).toLowerCase()).includes(search.toLowerCase()))}
                     setItems={setItems} 
                 />
             ) : (
