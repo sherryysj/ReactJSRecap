@@ -1,7 +1,11 @@
 import AddItem from "./AddItem";
 import ItemList from "./ItemList";
+import SearchItem from "./SearchItem";
+import { useState } from "react";
 
 const Content = ({items, setItems}) => {
+
+    const [search, setSearch] = useState("")
 
     // use Tab to auto indentation
     return (
@@ -10,9 +14,13 @@ const Content = ({items, setItems}) => {
                 items = {items}
                 setItems={setItems} 
             />
+            <SearchItem 
+                search = {search}
+                setSearch = {setSearch}
+            />
             {items.length ? (
                 <ItemList
-                    items = {items}
+                    items = {items.filter(item=>((item.item).toLowerCase()).includes(search.toLowerCase()))}
                     setItems={setItems} 
                 />
             ) : (
