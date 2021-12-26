@@ -7,7 +7,7 @@ const SearchItem = ({search, setSearch}) => {
                 id="search"
                 type="text"
                 role="searchBox"
-                placeholder="Search Items"
+                placeholder="Search Tasks"
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
             />

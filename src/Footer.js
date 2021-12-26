@@ -1,8 +1,11 @@
 const Footer = ({itemLength}) => {
 
+    const date = new Date();
+
     return (
         <footer>
-            <p>{itemLength} {itemLength <= 1 ? "Game" : "Games"} </p>
+            <p>{itemLength} {itemLength === 1 ? "Task" : "Tasks"} Left</p>
+            <p>{date.toLocaleDateString()}</p>
         </footer>
     )
 

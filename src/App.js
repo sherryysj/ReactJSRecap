@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header title = "Games"/>
+      <Header title = "Daily To-Do Tasks"/>
       <Content 
         items = {items}
         setItems = {setItems}

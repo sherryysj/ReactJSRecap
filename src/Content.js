@@ -25,7 +25,7 @@ const Content = ({items, setItems}) => {
                     setItems={setItems} 
                 />
             ) : (
-                <p style={{marginTop: '2rem'}}>Your list is empty.</p>
+                <p style={{marginTop: '2rem'}}>Your task list is empty.</p>
             )}
         </main>
     )
