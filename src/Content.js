@@ -1,3 +1,4 @@
+import AddItem from "./AddItem";
 import ItemList from "./ItemList";
 
 const Content = ({items, setItems}) => {
@@ -5,6 +6,7 @@ const Content = ({items, setItems}) => {
     // use Tab to auto indentation
     return (
         <main>
+            <AddItem />
             {items.length ? (
                 <ItemList
                     items = {items}
