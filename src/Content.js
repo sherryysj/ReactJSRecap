@@ -6,7 +6,10 @@ const Content = ({items, setItems}) => {
     // use Tab to auto indentation
     return (
         <main>
-            <AddItem />
+            <AddItem 
+                items = {items}
+                setItems={setItems} 
+            />
             {items.length ? (
                 <ItemList
                     items = {items}

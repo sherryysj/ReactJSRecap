@@ -1,8 +1,32 @@
 import { FaPlus } from "react-icons/fa";
+import { useState } from "react";
 
-const AddItem = () => {
+const AddItem = ({items, setItems}) => {
+
+    const [newItem, setNewItem] = useState("");
+
+    const handleSubmit = (e) => {
+        e.preventDefault(); // prevent page reload when submit
+        if (!newItem) return;
+        addNewItem(newItem);
+        setNewItem("");
+        console.log("add item");
+    }
+
+    const addNewItem = (item) => {
+        const id = items.length ? items[items.length-1].id + 1 : 1;
+        const myNewItem = {id, checked: false, item};
+        const newItems = [...items, myNewItem]
+        setAndSaveItems(newItems);
+    }
+
+    const setAndSaveItems = (newItems) => {
+        setItems(newItems);
+        localStorage.setItem('gamelist', JSON.stringify(newItems));
+    }
+
     return (
-        <form className='addForm'>
+        <form className='addForm' onSubmit={handleSubmit}>
             <label htmlFor="addItem">Add Item</label>
             <input
                 autoFocus
@@ -10,6 +34,8 @@ const AddItem = () => {
                 type='text'
                 placeholder="Add Item"
                 required
+                value={newItem}
+                onChange={(e) => setNewItem(e.target.value)}
             />
             <button
                 type="submit"
@@ -17,7 +43,6 @@ const AddItem = () => {
             >
                 <FaPlus />
             </button>
-
         </form>
     )
 }
