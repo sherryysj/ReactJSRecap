@@ -1,9 +1,11 @@
 import { FaPlus } from "react-icons/fa";
 import { useState } from "react";
+import { useRef } from "react";
 
 const AddItem = ({items, setItems}) => {
 
     const [newItem, setNewItem] = useState("");
+    const inputRef = useRef();
 
     const handleSubmit = (e) => {
         e.preventDefault(); // prevent page reload when submit
@@ -30,6 +32,7 @@ const AddItem = ({items, setItems}) => {
             <label htmlFor="addItem">Add Item</label>
             <input
                 autoFocus
+                ref={inputRef}
                 id='addItem'
                 type='text'
                 placeholder="Add Item"
@@ -40,6 +43,7 @@ const AddItem = ({items, setItems}) => {
             <button
                 type="submit"
                 aria-label="Add Item"
+                onClick={() => inputRef.current.focus()} /* not work */
             >
                 <FaPlus />
             </button>
