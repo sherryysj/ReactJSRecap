@@ -2,14 +2,46 @@
 import Header from './Header';
 import Content from './Content';
 import Footer from './Footer';
+import { useState } from 'react';
 
 function App() {
+
+   const [items, setItems] = useState([
+    {
+        id: 1,
+        checked: true,
+        item: "Oxygen Not Include"
+    },
+    {
+        id: 2,
+        checked: false,
+        item: "Red Dead Redemption 2"
+    },
+    {
+        id: 3,
+        checked: false,
+        item: "Resident Evil 2"
+    },
+    {
+        id: 4,
+        checked: false,
+        item: "Crusader Kings 3"
+    },
+    {
+        id: 5,
+        checked: false,
+        item: "Stellaris"
+    }
+  ]);
 
   return (
     <div className="App">
       <Header title = "Games"/>
-      <Content />
-      <Footer />
+      <Content 
+        items = {items}
+        setItems = {setItems}
+      />
+      <Footer itemLength={items.length}/>
     </div>
   )
 

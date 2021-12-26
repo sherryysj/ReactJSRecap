@@ -1,9 +1,9 @@
-const Footer = () => {
+const Footer = ({itemLength}) => {
     const today = new Date();
 
     return (
         <footer>
-            <p>Copyright &copy; {today.getFullYear()}</p>
+            <p>{itemLength} games</p>
         </footer>
     )
 }

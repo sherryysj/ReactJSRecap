@@ -1,36 +1,6 @@
-import { useState } from "react";
 import { FaTrashAlt } from 'react-icons/fa'
 
-const Content = () => {
-
-    // set an object array in initial state 
-    const [items, setItems] = useState([
-        {
-            id: 1,
-            checked: true,
-            item: "Oxygen Not Include"
-        },
-        {
-            id: 2,
-            checked: false,
-            item: "Red Dead Redemption 2"
-        },
-        {
-            id: 3,
-            checked: false,
-            item: "Resident Evil 2"
-        },
-        {
-            id: 4,
-            checked: false,
-            item: "Crusader Kings 3"
-        },
-        {
-            id: 5,
-            checked: false,
-            item: "Stellaris"
-        }
-    ]);
+const Content = ({items, setItems}) => {
 
     const handleCheck = (id) => {
         // change item using map
