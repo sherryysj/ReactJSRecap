@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+      <Header title = "Games"/>
       <Content />
       <Footer />
     </div>
