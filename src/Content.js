@@ -2,10 +2,13 @@ import AddItem from "./AddItem";
 import ItemList from "./ItemList";
 import SearchItem from "./SearchItem";
 import { useState } from "react";
+import ColorInput from "./ColorInput";
+import ShowBox from "./ShowBox";
 
 const Content = ({items, setItems}) => {
 
     const [search, setSearch] = useState("")
+    const [color, setColor] = useState("")
 
     // use Tab to auto indentation
     return (
@@ -27,6 +30,14 @@ const Content = ({items, setItems}) => {
             ) : (
                 <p style={{marginTop: '2rem'}}>Your list is empty.</p>
             )}
+
+            <ShowBox
+                color={color}
+            />
+            <ColorInput 
+                color = {color}
+                setColor = {setColor}
+            />
         </main>
     )
 }
