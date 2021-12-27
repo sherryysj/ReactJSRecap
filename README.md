@@ -5,9 +5,9 @@ It is follow the tutorial on Youtube [React JS Full Course for Beginners | Compl
 
 ## Available Scripts
 
-In the project directory, you can run following command on main branch or certain App branch such as DailyTasksApp to browse the practice project or app:
+In the project directory, you can run following command to browse the practice project:
 
-**DailyTasksApp** is a tiny project refactory from the tutorial project, which can use for set daily to-do list.
+**Practice Project** is a tiny project to control the background color of a component from user input.
 
 ### `npm start`
 

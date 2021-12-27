@@ -2,7 +2,7 @@ const ShowBox = ({color}) => {
 
     return (
         <container style = {{backgroundColor: color}}>
-            <p>{color}</p>
+            <p>{color ? color : "White"}</p>
         </container>
     )
 
