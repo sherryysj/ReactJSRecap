@@ -31,21 +31,21 @@ main {
 }
 
 .ShowBox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 300px; 
   width: 300px; 
   border: 2px solid rgb(0, 0, 0);
   border-radius: 0.25rem;
+  box-shadow: 2px 2px 5px #000;
+  display: grid;
+  place-content: center;
+}
+
+.ShowBox p {
+  text-align: center;
 }
 
 .colorForm {
   width: 300px;
-  display: flex;
-  justify-content: flex-start;
-  margin: 0.25rem 0 0;
-  padding: 0 0.5rem 0.25rem;
 }
 
 .colorForm label {
@@ -54,11 +54,21 @@ main {
 }
 
 .colorForm input[type='text'] {
-  flex-grow: 1;
-  max-width: 300px;
-  min-height: 48px;
-  font-size: 1rem;
+  margin-top: 0.5rem;
   padding: 0.25rem;
+  width: 100%;
+  font-size: 1rem;
+  box-shadow: 2px 2px 5px #000;
   border-radius: 0.25rem;
   outline: none;
+}
+
+button {
+  width: 100%;
+  min-height: 48px;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  box-shadow: 2px 2px 5px #000;
+  padding: 0.25rem;
 }

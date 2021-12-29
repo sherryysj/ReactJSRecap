@@ -2,19 +2,25 @@ import { useState } from "react";
 import ColorInput from "./ColorInput";
 import ShowBox from "./ShowBox";
 
-const Content = ({items, setItems}) => {
+const Content = () => {
 
     const [color, setColor] = useState("")
+    const [hexColor, setHexColor] = useState("")
+    const [isDarkText, setIsDarkText] = useState(true)
 
-    // use Tab to auto indentation
     return (
         <main>
             <ShowBox
                 color={color}
+                hexColor={hexColor}
+                isDarkText={isDarkText}
             />
             <ColorInput 
                 color = {color}
                 setColor = {setColor}
+                setHexColor = {setHexColor}
+                isDarkText ={isDarkText}
+                setIsDarkText = {setIsDarkText}
             />
         </main>
     )

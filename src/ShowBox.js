@@ -1,14 +1,18 @@
 import React from "react";
 
-const ShowBox = ({color}) => {
+const ShowBox = ({color, hexColor, isDarkText}) => {
 
     return (
-        <div 
+        <section 
             className="ShowBox"
-            style = {{backgroundColor: color}}
+            style = {{
+                backgroundColor: color,
+                color: isDarkText ? "#000" : "#FFF"
+            }}
         >
-            <p style ={{color: color === "black" ? "white" : "black"}}>Background Color: {color ? color : "white"}</p>
-        </div>
+            <p>{color ? color : "Empty Value"}</p>
+            <p>{hexColor ? hexColor : null}</p>
+        </section>
     )
 
 }
