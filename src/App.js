@@ -6,14 +6,15 @@ import { useState, useEffect} from 'react';
 
 function App() {
 
-  const [items, setItems] = useState(JSON.parse(localStorage.getItem('gamelist')));
+  // set defualt empty array if local story array is null
+  const [items, setItems] = useState(JSON.parse(localStorage.getItem('gamelist')) || []);
   
   console.log('before updating items');
 
   // function running when dependency updates
   // runining after everything rendered 
   useEffect(() => {
-    console.log('updating items')
+    localStorage.setItem('gamelist', JSON.stringify(items));
   },[items])
 
   // this will run before useEffect

@@ -18,12 +18,7 @@ const AddItem = ({items, setItems}) => {
         const id = items.length ? items[items.length-1].id + 1 : 1;
         const myNewItem = {id, checked: false, item};
         const newItems = [...items, myNewItem]
-        setAndSaveItems(newItems);
-    }
-
-    const setAndSaveItems = (newItems) => {
         setItems(newItems);
-        localStorage.setItem('gamelist', JSON.stringify(newItems));
     }
 
     return (
