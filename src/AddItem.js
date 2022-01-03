@@ -12,7 +12,6 @@ const AddItem = ({items, setItems}) => {
         if (!newItem) return;
         addNewItem(newItem);
         setNewItem("");
-        console.log("add item");
     }
 
     const addNewItem = (item) => {

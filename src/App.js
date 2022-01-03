@@ -2,11 +2,22 @@
 import Header from './Header';
 import Content from './Content';
 import Footer from './Footer';
-import { useState } from 'react';
+import { useState, useEffect} from 'react';
 
 function App() {
 
-   const [items, setItems] = useState(JSON.parse(localStorage.getItem('gamelist')));
+  const [items, setItems] = useState(JSON.parse(localStorage.getItem('gamelist')));
+  
+  console.log('before updating items');
+
+  // function running when dependency updates
+  // runining after everything rendered 
+  useEffect(() => {
+    console.log('updating items')
+  },[items])
+
+  // this will run before useEffect
+  console.log('after updating items');
 
   return (
     <div className="App">
