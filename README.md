@@ -7,7 +7,8 @@ It is follow the tutorial on Youtube [React JS Full Course for Beginners | Compl
 
 In the project directory, you can run following command on main branch or certain App branch such as DailyTasksApp to browse the practice project or app:
 
-**main branch** is a practice list item project using basic ReactJS knowledge and json API.\ 
+**main branch** is a practice list item project using basic ReactJS knowledge and json API.
+
 **DailyTasksApp** is a tiny project refactory from the tutorial project, which can use for set daily to-do list.
 
 
