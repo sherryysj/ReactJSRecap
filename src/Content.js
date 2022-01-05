@@ -3,7 +3,7 @@ import ItemList from "./ItemList";
 import SearchItem from "./SearchItem";
 import { useState } from "react";
 
-const Content = ({items, setItems, fetchError, isLoading}) => {
+const Content = ({items, setItems, fetchError, isLoading, setFetchError, API_URL}) => {
 
     const [search, setSearch] = useState("")
 
@@ -13,6 +13,8 @@ const Content = ({items, setItems, fetchError, isLoading}) => {
             <AddItem 
                 items = {items}
                 setItems={setItems} 
+                setFetchError = {setFetchError}
+                API_URL = {API_URL}
             />
             <SearchItem 
                 search = {search}
@@ -26,6 +28,8 @@ const Content = ({items, setItems, fetchError, isLoading}) => {
                         items = {items}
                         searchItems = {items.filter(item=>((item.item).toLowerCase()).includes(search.toLowerCase()))}
                         setItems={setItems} 
+                        setFetchError = {setFetchError}
+                        API_URL = {API_URL}
                     />
                 ) : (
                     <p style={{marginTop: '2rem'}}>Your list is empty.</p>

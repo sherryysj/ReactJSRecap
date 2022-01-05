@@ -4,6 +4,7 @@ import Content from './Content';
 import Footer from './Footer';
 import { useState, useEffect} from 'react';
 
+
 function App() {
   const API_URL = 'http://localhost:3500/items';
 
@@ -16,7 +17,7 @@ function App() {
   // runining after everything rendered 
   useEffect(() => {
 
-    //async makes a function return a Promise
+    //async makes a function return a Promise 
     //await makes a function wait for a Promise
     const fetchItems = async () => {
       try {
@@ -46,6 +47,8 @@ function App() {
         setItems = {setItems}
         fetchError = {fetchError}
         isLoading = {isLoading}
+        setFetchError = {setFetchError}
+        API_URL = {API_URL}
       />
       <Footer itemLength={items.length}/>
     </div>

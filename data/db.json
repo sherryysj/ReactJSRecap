@@ -1,19 +1,24 @@
 {
-    "items":[
-        {
-            "id": 1,
-            "checked": false,
-            "item": "Don't Starve"
-        },
-        {
-            "id": 2,
-            "checked": false,
-            "item": "Grand Theft Auto 5"
-        },
-        {
-            "id": 3,
-            "checked": false,
-            "item": "Oxygen Not Include"
-        }
-    ]
+  "items": [
+    {
+      "id": 1,
+      "checked": false,
+      "item": "Don't Starve"
+    },
+    {
+      "id": 2,
+      "checked": false,
+      "item": "Grand Theft Auto 5"
+    },
+    {
+      "id": 3,
+      "checked": false,
+      "item": "Oxygen Not Include"
+    },
+    {
+      "id": 4,
+      "checked": false,
+      "item": "Red Dead Redemption 2"
+    }
+  ]
 }
