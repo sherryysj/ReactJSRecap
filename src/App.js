@@ -2,11 +2,42 @@
 import Header from './Header';
 import Content from './Content';
 import Footer from './Footer';
-import { useState } from 'react';
+import { useState, useEffect} from 'react';
+
 
 function App() {
+  const API_URL = 'http://localhost:3500/items';
 
-   const [items, setItems] = useState(JSON.parse(localStorage.getItem('gamelist')));
+  // set defualt empty array if local story array is null
+  const [items, setItems] = useState([]);
+  const [fetchError, setFetchError] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
+  
+  // function running when dependency updates
+  // runining after everything rendered 
+  useEffect(() => {
+
+    //async makes a function return a Promise 
+    //await makes a function wait for a Promise
+    const fetchItems = async () => {
+      try {
+        const response = await fetch(API_URL);
+        if (!response.ok) throw Error('Did not receive expected data');
+        const listItems = await response.json();
+        setItems(listItems);
+        setFetchError(null);
+      } catch (err){
+        setFetchError(err.message);
+      } finally {
+        setIsLoading(false);
+      }
+    }
+
+    setTimeout(() => {
+      (async () => await fetchItems())();
+    }, 2000)
+
+  },[])
 
   return (
     <div className="App">
@@ -14,6 +45,10 @@ function App() {
       <Content 
         items = {items}
         setItems = {setItems}
+        fetchError = {fetchError}
+        isLoading = {isLoading}
+        setFetchError = {setFetchError}
+        API_URL = {API_URL}
       />
       <Footer itemLength={items.length}/>
     </div>

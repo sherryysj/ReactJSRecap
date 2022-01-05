@@ -1,6 +1,6 @@
 import LineItem from "./LineItem";
 
-const ItemList = ({items, searchItems, setItems}) => {
+const ItemList = ({items, searchItems, setItems, setFetchError, API_URL}) => {
 
     return (
         <ul>
@@ -10,6 +10,8 @@ const ItemList = ({items, searchItems, setItems}) => {
                     item = {item}
                     items = {items}
                     setItems = {setItems}
+                    setFetchError = {setFetchError}
+                    API_URL = {API_URL}
                 />
             ))}
         </ul>
