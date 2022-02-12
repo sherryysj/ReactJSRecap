@@ -1,9 +1,9 @@
 
 function Footer() {
   return (
-
-    <small>© 2022 Sherry.Y Development. All rights reserved.</small>
-
+    <footer>
+      <small>© 2022 Sherry.Y Development. All rights reserved.</small>
+    </footer>
   )
 }
 
