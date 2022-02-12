@@ -5,17 +5,13 @@ It is follow the tutorial on Youtube [React JS Full Course for Beginners | Compl
 
 ## Available Scripts
 
-**DailyTasksApp** is a tiny project refactory from the tutorial project, which can use for set daily to-do list.
+In the project directory, you can run following command on main branch or certain App branch such as DailyTasksApp to browse the practice project or app:
 
-In the project directory, you can run following command browse the app:
+**main branch** is a tutorial project using basic ReactJS knowledge and json API.
 
-### `npm start`
+**DailyTasksApp** is a project refactory from the tutorial project, which can use for set daily to-do list.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**PracticeProjec** is a tiny project for letting user can set colors for the page background.
 
 
 ### `npm run build`
@@ -26,5 +22,19 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+### `npx json-server -p 3500 -w data/db.json`
+
+Running data API which will be used in main branch.\
+Open [http://localhost:3500/items](http://localhost:3500/items) to view the data in your browser.
+
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
