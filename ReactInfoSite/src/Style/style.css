@@ -8,7 +8,7 @@
 .nav-items {
   list-style: none;
   display: flex;
-  margin-left: 50px;
+  margin-left: auto;
 }
 
 .nav-items > li {
@@ -16,6 +16,7 @@
 }
 .nav-items > li > a {
   color: rgb(255, 255, 255);
+  font-weight: bold;
 }
 .nav-title {
   margin-left: 5px;
