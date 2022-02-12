@@ -1,0 +1,66 @@
+body {
+  background-color: rgb(50, 50, 50);
+  margin: 0;
+  background-image: url(/public/assets/images/react-icon-large.png);
+  background-position-x: right;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgb(22, 22, 22);
+}
+
+.nav-items {
+  list-style: none;
+  display: flex;
+  margin-left: auto;
+}
+
+.nav-items > li {
+  padding: 10px;
+}
+.nav-items > li > a {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+.nav-title {
+  margin-left: 5px;
+  color: aqua;
+}
+
+.nav-logo {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+.content {
+  margin-top: 30px;
+  margin-left: 20px;
+  color: aliceblue;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.content > ul {
+  margin-top: 20px;
+}
+
+.content > ul > li {
+  margin-top: 5px;
+}
+
+.content > ul > li::marker {
+  font-size: 1.5rem;
+  color: aqua;
+}
+
+footer {
+  margin-top: 30px;
+  margin-left: 20px;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
