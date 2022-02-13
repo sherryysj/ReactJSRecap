@@ -4,7 +4,7 @@ function Detail() {
     <div className="detail">
         <div>
             <h4>About</h4>
-            <p>I am a full stack software engineer, who is specialised in web developing with ReactJS and game developing with Unity.</p>
+            <p>I am a full stack software engineer, who is specialised in web developing with ReactJS, PHP, Python, Golang, .Net and NodeJS as well as game developing with Unity.</p>
         </div>
         <div>
             <h4>Interests</h4>
