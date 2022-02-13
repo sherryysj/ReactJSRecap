@@ -1,5 +1,5 @@
-import React from 'react'
 import Contact from './Contact';
+import Detail from './Detail';
 import Header from './Header';
 
 function Card() {
@@ -7,7 +7,7 @@ function Card() {
     <div className='card'>
         <Header />
         <Contact />
-
+        <Detail />
     </div>
   )
 }

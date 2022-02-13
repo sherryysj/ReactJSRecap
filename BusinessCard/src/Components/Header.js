@@ -1,4 +1,3 @@
-import React from 'react'
 import Photo from '../Images/photo.jpg'
 
 function Header() {
