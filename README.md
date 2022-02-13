@@ -15,9 +15,11 @@ Each folder under the main branch is an independent project.
 
 * ***DailyTasksApp:*** project refactory from the above tutorial project, which can use for set daily to-do list.
 
-* ***BackColorChange:*** tiny project for letting user can set colors for the page background.
+* ***BackColorChange:*** tiny project for letting user can set colors for the page background, following No.1 tutorial.
 
 * ***ReactInfoSite:*** web page showing information about React, which is the starter project of No.2 tutorial.
+
+* ***BusinessCard:*** web page showing a business card of myself.
 
 
 ## Conmands
