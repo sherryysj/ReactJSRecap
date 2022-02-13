@@ -1,0 +1,107 @@
+html {
+  height: 100%;
+}
+
+body {
+  background-color: rgb(43, 43, 43);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.card {
+  background-color: rgb(63, 63, 63);
+  width: 300px;
+  min-height: 800px;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.photo {
+  width: 300px;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.card-name {
+  color: white;
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-bottom: 5px;
+}
+
+.card-title {
+  color: rgb(172, 172, 136);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.card-work {
+  color: aliceblue;
+  font-size: x-small;
+}
+
+.contact {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact > div {
+  min-width: 100px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.contact > div > a {
+  border-radius: 0.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+}
+
+.contact > div > a > p {
+  margin-left: 5px;
+}
+
+.linkedin {
+  background-color: rgb(34, 130, 240);
+  color: aliceblue;
+}
+
+.github {
+  background-color: rgb(255, 255, 255);
+  color: rgb(58, 58, 58);
+}
+
+.detail {
+  color: aliceblue;
+  margin-top: 10px;
+}
+
+.detail > div {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.detail > div > h4 {
+  margin-bottom: 5px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.detail > div > p {
+  text-align: left;
+  margin-top: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: small;
+}
