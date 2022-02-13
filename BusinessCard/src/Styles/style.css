@@ -80,3 +80,28 @@ body {
   background-color: rgb(255, 255, 255);
   color: rgb(58, 58, 58);
 }
+
+.detail {
+  color: aliceblue;
+  margin-top: 10px;
+}
+
+.detail > div {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.detail > div > h4 {
+  margin-bottom: 5px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.detail > div > p {
+  text-align: left;
+  margin-top: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: small;
+}
