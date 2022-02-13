@@ -42,3 +42,30 @@ body {
   color: aliceblue;
   font-size: x-small;
 }
+
+.contact {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.contact > div {
+  min-width: 100px;
+}
+
+.contact > div > a {
+  border-radius: 0.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.3rem;
+}
+
+.linkedin {
+  background-color: rgb(34, 130, 240);
+  color: aliceblue;
+}
+
+.github {
+  background-color: rgb(255, 255, 255);
+  color: rgb(58, 58, 58);
+}
