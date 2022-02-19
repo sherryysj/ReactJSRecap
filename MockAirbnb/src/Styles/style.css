@@ -40,3 +40,46 @@ section {
   margin-top: 0;
   align-self: center;
 }
+
+.card {
+  max-width: 200px;
+}
+
+.card > img {
+  max-width: inherit;
+}
+
+.card-comment {
+  display: flex;
+  align-items: center;
+  height: 30px;
+}
+
+.card-comment > i {
+  color: rgb(241, 56, 93);
+}
+
+.card-comment > p {
+  margin-left: 5px;
+  color: gray;
+}
+
+.card-lesson {
+  color: gray;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.card-price {
+  display: flex;
+  height: 30px;
+  align-items: center;
+}
+
+.price-amount {
+  font-weight: bold;
+}
+
+.price-type {
+  color: gray;
+}
