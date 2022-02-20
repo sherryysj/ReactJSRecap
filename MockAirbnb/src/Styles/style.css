@@ -45,6 +45,8 @@ section {
   padding-left: 10px;
   padding-right: 10px;
   display: flex;
+  width: fit-content;
+  margin: auto;
 }
 
 .card {
