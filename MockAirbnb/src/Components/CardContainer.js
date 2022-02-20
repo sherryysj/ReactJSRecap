@@ -2,9 +2,9 @@ import Card from "./Card"
 
 function CardContainer() {
   return (
-    <div>
+    <div className="card-container">
         <Card 
-          imgLink="/assets/images/photo-grid.png"
+          imgLink="/assets/images/katie-zaferes.png"
           stars="5.0"
           commentsAmount={16}
           country="USA"
