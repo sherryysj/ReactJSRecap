@@ -1,7 +1,7 @@
 function Card(props) {
   return (
     <div className='card'>
-        <img src={props.imgLink}/>
+        <img src={props.imgLink} alt="profile"/>
         <div className="card-detail">
           <div className='card-comment'>
               <i class='fa fa-star'></i>
