@@ -59,30 +59,36 @@ section {
   border-radius: 2mm;
 }
 
+.card > h4 {
+  color: rgb(68, 52, 52);
+  padding: 5px;
+  margin: 0;
+}
+
 .card-detail {
   padding: 5px;
 }
 
-.card-comment {
+.card-review {
   display: flex;
   align-items: center;
   height: 30px;
 }
 
-.card-comment > i {
+.card-review > i {
   color: rgb(241, 56, 93);
 }
 
-.card-comment > p {
+.card-review > p {
   margin-left: 3px;
   color: rgb(61, 61, 61);
 }
 
-.card-comment > p > span {
+.card-review > p > span {
   color: gray;
 }
 
-.card-lesson {
+.card-description {
   color: gray;
   margin-top: 10px;
   margin-bottom: 10px;
