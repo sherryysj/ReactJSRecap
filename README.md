@@ -11,15 +11,17 @@ It is following below tutorials
 
 Each folder under the main branch is an independent project.
 
-* ***ReactTutorial:*** code practice project following the No.1 tutorial, which is an item list browser.
+* ***ReactTutorial:*** code practice project following the tutorial No.1 , which is an item list browser.
 
 * ***DailyTasksApp:*** project refactory from the above tutorial project, which can use for set daily to-do list.
 
-* ***BackColorChange:*** tiny project for letting user can set colors for the page background, following No.1 tutorial.
+* ***BackColorChange:*** tiny project for letting user can set colors for the page background, following tutorial No.1.
 
-* ***ReactInfoSite:*** web page showing information about React, which is the starter project of No.2 tutorial.
+* ***ReactInfoSite:*** web page showing information about React, which is the starter project of tutorial No.2.
 
 * ***BusinessCard:*** web page showing a business card of myself.
+
+* ***MockAirbnb:*** web page simply mocking Airbnb Experience activity card displaying, following tutorial No.2.
 
 
 ## Conmands
