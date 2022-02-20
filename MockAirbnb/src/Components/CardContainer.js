@@ -6,8 +6,10 @@ function CardContainer() {
   const cards = data.map(card => {
     return (
       <Card 
+        key={card.id}
         title={card.title}
         imgLink={`/assets/images/${card.coverImg}`}
+        openSpots={card.openSpots}
         rating={card.stats.rating}
         reviewCount={card.stats.reviewCount}
         location={card.location}

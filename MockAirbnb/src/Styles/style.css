@@ -54,6 +54,27 @@ section {
   box-shadow: 0px 3px 7.5px rgb(247, 207, 207);
   border-radius: 2mm;
   margin-left: 10px;
+  position: relative;
+}
+
+.card-spots {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background-color: rgb(255, 255, 255);
+  padding: 5px 7px;
+  border-radius: 2px;
+  font-weight: bold;
+}
+
+.card-online {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  background-color: rgb(252, 225, 225);
+  padding: 5px 7px;
+  border-radius: 2px;
+  font-weight: bold;
 }
 
 .card > img {

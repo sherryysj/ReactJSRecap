@@ -1,6 +1,8 @@
 function Card(props) {
   return (
     <div className='card'>
+        {props.openSpots===0 && <div className="card-spots">SOLD OUT</div>}
+        {props.location==="Online" && <div className="card-online">ONLINE</div>}
         <img src={props.imgLink} alt="profile"/>
         <h4>{props.title}</h4>
         <div className="card-detail">
