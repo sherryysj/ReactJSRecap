@@ -6,12 +6,11 @@ function Card() {
         <img src={Image}/>
         <div className='card-comment'>
             <i class='fa fa-star'></i>
-            <p>5.0(6) USA</p>
+            <p>5.0<span>(6) • USA</span></p>
         </div>
         <p className='card-lesson'>lesson name</p>
         <div className='card-price'>
-            <p className='price-amount'>From $136</p>
-            <p className='price-type'> / hour</p>
+            <p>From $136<span> / hour</span></p>
         </div>
         
         

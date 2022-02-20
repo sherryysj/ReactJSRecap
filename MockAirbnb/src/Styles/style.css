@@ -61,6 +61,10 @@ section {
 
 .card-comment > p {
   margin-left: 5px;
+  color: rgb(61, 61, 61);
+}
+
+.card-comment > p > span {
   color: gray;
 }
 
@@ -76,10 +80,11 @@ section {
   align-items: center;
 }
 
-.price-amount {
+.card-price > p {
   font-weight: bold;
 }
 
-.price-type {
+.card-price > p > span {
   color: gray;
+  font-weight: lighter;
 }
