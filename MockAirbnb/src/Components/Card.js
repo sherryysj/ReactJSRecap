@@ -1,19 +1,15 @@
-import Image from "../Images/airbnb-logo.png"
-
-function Card() {
+function Card(props) {
   return (
     <div className='card'>
-        <img src={Image}/>
+        <img src={props.imgLink}/>
         <div className='card-comment'>
             <i class='fa fa-star'></i>
-            <p>5.0<span>(6) • USA</span></p>
+            <p>{props.stars}<span>({props.commentsAmount}) • {props.country}</span></p>
         </div>
-        <p className='card-lesson'>lesson name</p>
+        <p className='card-lesson'>{props.lesson}</p>
         <div className='card-price'>
-            <p>From $136<span> / hour</span></p>
+            <p>From ${props.price}<span> / {props.priceType}</span></p>
         </div>
-        
-        
     </div>
   )
 }
