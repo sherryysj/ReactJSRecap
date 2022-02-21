@@ -34,12 +34,12 @@ nav > h3 {
 
 .journal {
   display: flex;
-  max-width: 700px;
+  width: 700px;
   margin: 10px;
 }
 
 .journal > img {
-  width: 150px;
+  width: 170px;
   max-height: 250px;
   border-radius: 2mm;
 }
