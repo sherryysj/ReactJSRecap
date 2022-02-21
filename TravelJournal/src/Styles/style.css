@@ -51,6 +51,7 @@ nav > h3 {
 .location {
   display: flex;
   align-items: center;
+  height: 35px;
 }
 
 .location > i {
@@ -63,7 +64,7 @@ nav > h3 {
 }
 
 .location > a {
-  margin-left: 5px;
+  margin-left: 10px;
   color: rgb(161, 160, 160);
 }
 
