@@ -23,6 +23,8 @@ Each folder under the main branch is an independent project.
 
 * ***MockAirbnb:*** web page simply mocking Airbnb Experience activity card displaying, following tutorial No.2.
 
+* ***TravelJournal:*** web page displaying travelled places.
+
 
 ## Conmands
 
