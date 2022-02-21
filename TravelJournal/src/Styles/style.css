@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+nav {
+  height: 70px;
+  display: flex;
+  padding: 15px 15px;
+  background-color: rgb(248, 147, 147);
+  align-items: center;
+  justify-content: center;
+}
+
+nav > i {
+  color: white;
+  font-size: 30px !important;
+}
+
+nav > h3 {
+  color: white;
+  margin-left: 10px;
+}
