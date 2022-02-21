@@ -13,6 +13,7 @@ nav {
   background-color: rgb(248, 147, 147);
   align-items: center;
   justify-content: center;
+  margin-bottom: 20px;
 }
 
 nav > i {
@@ -40,8 +41,8 @@ nav > h3 {
 
 .journal > img {
   width: 170px;
-  max-height: 250px;
   border-radius: 2mm;
+  object-fit: cover;
 }
 
 .journal-details {
